@@ -1,0 +1,18 @@
+klatt42-business-ops-skills
+Copyright 2026 Ron Klatt
+
+This product includes software originally developed by Anthropic, PBC
+(https://www.anthropic.com), distributed under the Apache License 2.0.
+
+Original sources:
+  - Marketing plugin (knowledge-work-plugins/marketing) — Anthropic
+  - Brand-guidelines skill — Anthropic
+  - Canvas-design skill — Anthropic
+  - Internal-comms skill — Anthropic
+  - Schedule skill — Anthropic
+  - Theme-factory skill — Anthropic
+  - Office document skills (docx, xlsx, pdf, pptx) — Anthropic
+
+Per-skill LICENSE.txt files have been preserved in their original form.
+Modifications, additions, and the overall packaging of this repository
+are © 2026 Ron Klatt, also released under Apache License 2.0.
