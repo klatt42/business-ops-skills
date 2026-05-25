@@ -7,67 +7,67 @@
     {
       "name": "productivity",
       "displayName": "Productivity",
-      "source": "./productivity",
+      "source": "./plugins/productivity",
       "description": "Manage tasks, plan your day, and build up memory of important context about your work. Syncs with your calendar, email, and chat to keep everything organized and on track."
     },
     {
       "name": "enterprise-search",
       "displayName": "Enterprise Search",
-      "source": "./enterprise-search",
+      "source": "./plugins/enterprise-search",
       "description": "Search across all of your company's tools in one place. Find anything across email, chat, documents, and wikis without switching between apps."
     },
     {
       "name": "cowork-plugin-management",
       "displayName": "Plugin Management",
-      "source": "./cowork-plugin-management",
+      "source": "./plugins/cowork-plugin-management",
       "description": "Create, customize, and manage plugins tailored to your organization's tools and workflows. Configure MCP servers, adjust plugin behavior, and adapt templates to match how your team works."
     },
     {
       "name": "sales",
       "displayName": "Sales",
-      "source": "./sales",
+      "source": "./plugins/sales",
       "description": "Prospect, craft outreach, and build deal strategy faster. Prep for calls, manage your pipeline, and write personalized messaging that moves deals forward."
     },
     {
       "name": "finance",
       "displayName": "Finance",
-      "source": "./finance",
+      "source": "./plugins/finance",
       "description": "Streamline finance and accounting workflows, from journal entries and reconciliation to financial statements and variance analysis. Speed up audit prep, month-end close, and keeping your books clean."
     },
     {
       "name": "data",
       "displayName": "Data",
-      "source": "./data",
+      "source": "./plugins/data",
       "description": "Write SQL, explore datasets, and generate insights faster. Build visualizations and dashboards, and turn raw data into clear stories for stakeholders."
     },
     {
       "name": "legal",
       "displayName": "Legal",
-      "source": "./legal",
+      "source": "./plugins/legal",
       "description": "Speed up contract review, NDA triage, and compliance workflows for in-house legal teams. Draft legal briefs, organize precedent research, and manage institutional knowledge."
     },
     {
       "name": "marketing",
       "displayName": "Marketing",
-      "source": "./marketing",
+      "source": "./plugins/marketing",
       "description": "Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working."
     },
     {
       "name": "customer-support",
       "displayName": "Customer Support",
-      "source": "./customer-support",
+      "source": "./plugins/customer-support",
       "description": "Triage tickets, draft responses, escalate issues, and build your knowledge base. Research customer context and turn resolved issues into self-service content."
     },
     {
       "name": "product-management",
       "displayName": "Product Management",
-      "source": "./product-management",
+      "source": "./plugins/product-management",
       "description": "Write feature specs, plan roadmaps, and synthesize user research faster. Keep stakeholders updated and stay ahead of the competitive landscape."
     },
     {
       "name": "slack-by-salesforce",
       "displayName": "Slack",
-      "source": "./partner-built/slack",
+      "source": "./plugins/partner-built/slack",
       "description": "Slack integration for searching messages, sending communications, managing canvases, and more",
       "author": {
         "name": "Salesforce"
@@ -76,7 +76,7 @@
     {
       "name": "apollo",
       "displayName": "Apollo.io",
-      "source": "./partner-built/apollo",
+      "source": "./plugins/partner-built/apollo",
       "description": "Prospect, enrich leads, and load outreach sequences with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
       "author": {
         "name": "Apollo.io"
@@ -85,7 +85,7 @@
     {
       "name": "common-room",
       "displayName": "Common Room",
-      "source": "./partner-built/common-room",
+      "source": "./plugins/partner-built/common-room",
       "description": "Turn Common Room into your GTM copilot. Research accounts and contacts, prep for calls with attendee profiles and talking points, and draft personalized outreach across email, LinkedIn, and phone.",
       "author": {
         "name": "Common Room"
@@ -94,37 +94,37 @@
     {
       "name": "engineering",
       "displayName": "Engineering",
-      "source": "./engineering",
+      "source": "./plugins/engineering",
       "description": "Streamline engineering workflows — standups, code review, architecture decisions, incident response, and technical documentation. Works with your existing tools or standalone."
     },
     {
       "name": "human-resources",
       "displayName": "Human Resources",
-      "source": "./human-resources",
+      "source": "./plugins/human-resources",
       "description": "Streamline people operations — recruiting, onboarding, performance reviews, compensation analysis, and policy guidance. Maintain compliance and keep your team running smoothly."
     },
     {
       "name": "design",
       "displayName": "Design",
-      "source": "./design",
+      "source": "./plugins/design",
       "description": "Accelerate design workflows — critique, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. From exploration to pixel-perfect specs."
     },
     {
       "name": "operations",
       "displayName": "Operations",
-      "source": "./operations",
+      "source": "./plugins/operations",
       "description": "Optimize business operations — vendor management, process documentation, change management, capacity planning, and compliance tracking. Keep your organization running efficiently."
     },
     {
       "name": "small-business",
       "displayName": "Small Business",
-      "source": "./small-business",
+      "source": "./plugins/small-business",
       "description": "Pre-built small business workflows (including payroll planning, month-end close, weekly briefs, and growth campaigns) using your QuickBooks, PayPal, HubSpot, Docusign, Gsuite, O365, Canva, and other connected tools. You approve every step that touches money or customers."
     },
     {
       "name": "brand-voice",
       "displayName": "Brand Voice",
-      "source": "./partner-built/brand-voice",
+      "source": "./plugins/partner-built/brand-voice",
       "description": "Discover your brand voice from existing documents and conversations, generate enforceable guidelines, and validate AI-generated content against your established tone and positioning.",
       "author": {
         "name": "Tribe AI"
@@ -133,7 +133,7 @@
     {
       "name": "zoom-plugin",
       "displayName": "Zoom",
-      "source": "./partner-built/zoom-plugin",
+      "source": "./plugins/partner-built/zoom-plugin",
       "description": "Plan, build, and debug Zoom integrations across REST APIs, Meeting SDK, Video SDK, webhooks, bots, and MCP workflows. Search meetings, retrieve recordings, access transcripts, and design AI-powered Zoom experiences.",
       "author": {
         "name": "Zoom"
@@ -142,7 +142,7 @@
     {
       "name": "pdf-viewer",
       "displayName": "PDF Viewer",
-      "source": "./pdf-viewer",
+      "source": "./plugins/pdf-viewer",
       "description": "View, annotate, and sign PDFs in a live interactive viewer. Mark up contracts, fill forms with visual feedback, stamp approvals, and place signatures — then download the annotated copy."
     }
   ]
