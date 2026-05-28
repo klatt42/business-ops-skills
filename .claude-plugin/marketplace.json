@@ -7,61 +7,61 @@
     {
       "name": "productivity",
       "displayName": "Productivity",
-      "source": "./plugins/productivity",
+      "source": "./plugins/vertical-plugins/productivity",
       "description": "Manage tasks, plan your day, and build up memory of important context about your work. Syncs with your calendar, email, and chat to keep everything organized and on track."
     },
     {
       "name": "enterprise-search",
       "displayName": "Enterprise Search",
-      "source": "./plugins/enterprise-search",
+      "source": "./plugins/vertical-plugins/enterprise-search",
       "description": "Search across all of your company's tools in one place. Find anything across email, chat, documents, and wikis without switching between apps."
     },
     {
       "name": "cowork-plugin-management",
       "displayName": "Plugin Management",
-      "source": "./plugins/cowork-plugin-management",
+      "source": "./plugins/vertical-plugins/cowork-plugin-management",
       "description": "Create, customize, and manage plugins tailored to your organization's tools and workflows. Configure MCP servers, adjust plugin behavior, and adapt templates to match how your team works."
     },
     {
       "name": "sales",
       "displayName": "Sales",
-      "source": "./plugins/sales",
+      "source": "./plugins/vertical-plugins/sales",
       "description": "Prospect, craft outreach, and build deal strategy faster. Prep for calls, manage your pipeline, and write personalized messaging that moves deals forward."
     },
     {
       "name": "finance",
       "displayName": "Finance",
-      "source": "./plugins/finance",
+      "source": "./plugins/vertical-plugins/finance",
       "description": "Streamline finance and accounting workflows, from journal entries and reconciliation to financial statements and variance analysis. Speed up audit prep, month-end close, and keeping your books clean."
     },
     {
       "name": "data",
       "displayName": "Data",
-      "source": "./plugins/data",
+      "source": "./plugins/vertical-plugins/data",
       "description": "Write SQL, explore datasets, and generate insights faster. Build visualizations and dashboards, and turn raw data into clear stories for stakeholders."
     },
     {
       "name": "legal",
       "displayName": "Legal",
-      "source": "./plugins/legal",
+      "source": "./plugins/vertical-plugins/legal",
       "description": "Speed up contract review, NDA triage, and compliance workflows for in-house legal teams. Draft legal briefs, organize precedent research, and manage institutional knowledge."
     },
     {
       "name": "marketing",
       "displayName": "Marketing",
-      "source": "./plugins/marketing",
+      "source": "./plugins/vertical-plugins/marketing",
       "description": "Create content, plan campaigns, and analyze performance across marketing channels. Maintain brand voice consistency, track competitors, and report on what's working."
     },
     {
       "name": "customer-support",
       "displayName": "Customer Support",
-      "source": "./plugins/customer-support",
+      "source": "./plugins/vertical-plugins/customer-support",
       "description": "Triage tickets, draft responses, escalate issues, and build your knowledge base. Research customer context and turn resolved issues into self-service content."
     },
     {
       "name": "product-management",
       "displayName": "Product Management",
-      "source": "./plugins/product-management",
+      "source": "./plugins/vertical-plugins/product-management",
       "description": "Write feature specs, plan roadmaps, and synthesize user research faster. Keep stakeholders updated and stay ahead of the competitive landscape."
     },
     {
@@ -94,31 +94,31 @@
     {
       "name": "engineering",
       "displayName": "Engineering",
-      "source": "./plugins/engineering",
+      "source": "./plugins/vertical-plugins/engineering",
       "description": "Streamline engineering workflows — standups, code review, architecture decisions, incident response, and technical documentation. Works with your existing tools or standalone."
     },
     {
       "name": "human-resources",
       "displayName": "Human Resources",
-      "source": "./plugins/human-resources",
+      "source": "./plugins/vertical-plugins/human-resources",
       "description": "Streamline people operations — recruiting, onboarding, performance reviews, compensation analysis, and policy guidance. Maintain compliance and keep your team running smoothly."
     },
     {
       "name": "design",
       "displayName": "Design",
-      "source": "./plugins/design",
+      "source": "./plugins/vertical-plugins/design",
       "description": "Accelerate design workflows — critique, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. From exploration to pixel-perfect specs."
     },
     {
       "name": "operations",
       "displayName": "Operations",
-      "source": "./plugins/operations",
+      "source": "./plugins/vertical-plugins/operations",
       "description": "Optimize business operations — vendor management, process documentation, change management, capacity planning, and compliance tracking. Keep your organization running efficiently."
     },
     {
       "name": "small-business",
       "displayName": "Small Business",
-      "source": "./plugins/small-business",
+      "source": "./plugins/vertical-plugins/small-business",
       "description": "Pre-built small business workflows (including payroll planning, month-end close, weekly briefs, and growth campaigns) using your QuickBooks, PayPal, HubSpot, Docusign, Gsuite, O365, Canva, and other connected tools. You approve every step that touches money or customers."
     },
     {
@@ -142,7 +142,7 @@
     {
       "name": "pdf-viewer",
       "displayName": "PDF Viewer",
-      "source": "./plugins/pdf-viewer",
+      "source": "./plugins/vertical-plugins/pdf-viewer",
       "description": "View, annotate, and sign PDFs in a live interactive viewer. Mark up contracts, fill forms with visual feedback, stamp approvals, and place signatures — then download the annotated copy."
     }
   ]

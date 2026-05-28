@@ -21,24 +21,31 @@ claude plugins install <plugin>@business-ops-skills
 
 ```
 .claude-plugin/marketplace.json   # marketplace manifest — one entry per plugin
-plugins/                          # 17 plugin folders
-  <plugin>/
-    .claude-plugin/plugin.json    # plugin manifest (name, version, description, author)
-    .mcp.json                     # MCP servers the plugin connects to (some plugins)
-    CONNECTORS.md                 # which connectors this plugin expects (some plugins)
-    CLAUDE.md                     # practice-profile template (some plugins — see below)
-    skills/<skill>/SKILL.md       # individual skills with YAML frontmatter + instructions
-  partner-built/                  # 5 partner-contributed sub-plugins (each registered separately)
-    <vendor>/...
+.githooks/pre-commit              # auto-bumps plugin.json version on staged changes
+plugins/
+  agent-plugins/                  # named workflow agents (empty — populated in Tier 3 if needed)
+  vertical-plugins/               # 16 first-party plugins by vertical/function
+    <plugin>/
+      .claude-plugin/plugin.json  # plugin manifest (name, version, description, author)
+      .mcp.json                   # MCP servers the plugin connects to (some plugins)
+      CONNECTORS.md               # which connectors this plugin expects (some plugins)
+      CLAUDE.md                   # practice-profile (small-business only so far)
+      skills/<skill>/SKILL.md     # individual skills with YAML frontmatter + instructions
+  partner-built/                  # 5 partner-contributed sub-plugins (each registered separately
+                                  # in marketplace.json: apollo, brand-voice, common-room, slack, zoom)
 skills/                           # 9 standalone Anthropic office skills
   <skill>/SKILL.md                # brand-guidelines, canvas-design, internal-comms, schedule,
                                   # theme-factory, docx, xlsx, pdf, pptx
 scripts/
-  check.py                        # validate marketplace.json, plugin.json, skill manifests
+  check.py                        # validate marketplace.json, plugin.json, SKILL.md manifests;
+                                  # also self-installs the git pre-commit hook
+  version_bump.py                 # auto-patch-bumps plugin version on staged changes
 LICENSE                           # Apache-2.0
 NOTICE                            # attribution to Anthropic
 README.md
 ```
+
+Layout mirrors `anthropics/financial-services`: `agent-plugins` for named bundles, `vertical-plugins` for skill+command bundles, `partner-built` for vendor plugins.
 
 ## Plugins
 
@@ -64,19 +71,22 @@ When extracting more plugins or refreshing existing ones from upstream:
 # 1. Clone the source
 git clone https://github.com/anthropics/knowledge-work-plugins /tmp/kwp
 
-# 2. Copy plugin folder(s) into plugins/
-cp -R /tmp/kwp/<plugin-name> plugins/<plugin-name>
+# 2. Copy first-party plugin into plugins/vertical-plugins/
+#    (partner-built goes in plugins/partner-built/; named bundles in plugins/agent-plugins/)
+cp -R /tmp/kwp/<plugin-name> plugins/vertical-plugins/<plugin-name>
 
 # 3. Update marketplace.json if adding a new plugin
 #    (jq filter: append to .plugins[] with name/displayName/source/description)
+#    Source path: "./plugins/vertical-plugins/<name>" or "./plugins/partner-built/<name>"
 
-# 4. Validate
+# 4. Validate (also installs the pre-commit hook on first run)
 python3 scripts/check.py
 
 # 5. Stage by specific paths (NEVER git add -A on this repo from WSL —
 #    drvfs creates ~70 false-positive "modified" files due to CRLF noise)
-git add plugins/<plugin-name> .claude-plugin/marketplace.json
+git add plugins/vertical-plugins/<plugin-name> .claude-plugin/marketplace.json
 git commit && git push
+# (pre-commit hook auto-bumps the plugin's version on staged changes)
 ```
 
 ## Drvfs gotcha (Windows / WSL)
